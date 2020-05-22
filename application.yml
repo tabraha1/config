@@ -1,0 +1,10 @@
+spring:
+  data:
+    rest:
+      base-path: /api
+    mongodb:
+      uri: mongodb://root:habana7@localhost:10012/event_service
+  jackson:
+    date-format: 'yyyy/MM/dd HH:mm:ss.SSS z'
+  quartz:
+    job-store-type: memory
