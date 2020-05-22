@@ -2,9 +2,16 @@ spring:
   data:
     rest:
       base-path: /api
-    mongodb:
-      uri: mongodb://root:secret7@localhost:10015/grocery_store
   jackson:
-    date-format: 'yyyy/MM/dd HH:mm:ss.SSS z'
-  quartz:
-    job-store-type: memory
+    date-format: "yyyy-MM-dd'T'HH:mm:ss'Z'"
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:11010/grocery_store
+    username: root
+    password: cuba7
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: "produce-api"
